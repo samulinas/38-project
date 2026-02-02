@@ -1,16 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--  <meta http-equiv="X-UA-Compatible" content="IE=7"> -->
+    <meta name="description" content="Опис сторінки">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="ключові слова, для, пошуку">
+    <!--     <meta http-equiv="refresh" content="2; url=http://127.0.0.1:5500/index.html">
+    <meta http-equiv="refresh" content="5"> -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Вивчення WEB - WEB BOOK</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!--     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J+Guides:ital@0;1&display=swap" rel="stylesheet"> -->
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: rgb(229, 230, 173);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                "header header header"
+                "main main aside"
+                "footer footer footer";
+        }
+
+        header {
+            grid-area: header;
+            background: lightskyblue;
+        }
+
+        footer {
+            grid-area: footer;
+            background: lightgrey;
+        }
+
+        aside {
+            grid-area: aside;
+            background: lightyellow;
+        }
+
+        main {
+            grid-area: main;
+            background: lightgreen;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <script defer>
+        console.log("Hello, World!");
+    </script>
+    <noscript>У вас вимкнено JavaScript</noscript>
+    <base href="http://127.0.0.1:5500/">
 </head>
+
 <body>
-   Тест<i></i>
-   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-   </ul>
+    <header>
+        <h1>Вивчення WEB</h1>
+        <nav>
+            <a href="https://google.com">Google</a> |
+            <a href="#image">Про нас</a> |
+            <a href="contact.html">Контакти</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Теги форматування</h2>
+            <article>
+                <i>Курсивний текст</i>
+                <em>Емоційно забарвлений текст!</em>
+                <strong>Важливий текст</strong>
+                <b>Жирний текст</b>
+                <u>Підкреслений текст</u>
+                <s>Закреслений текст</s>
+                <del>Закреслений текст</del>
+                <ins>Вставленний текст</ins>
+            </article>
+            <p>Lorem ipsum dolor sit amet consectetur aerat, molestiae! Et labore, temporibus nostrum adipisicing
+                elit.
+                Qudoiogjdslkgjdslkv<wbr>msldkfnsjfskjfasjsfhsjfhaskcslkcjasijsfjfskln,asncasnkjcaskjcfhasfgiawuhfsifjaos qui at
+        quisquam odit, incidunt porro quae blanditiis consectetur accusantium molestias ducimus officiis eaque
+        consequuntur ex.</p>
+            <span>Частина фрази</span>
+            <mark>Виділений текст</mark><br><br>
+            <big>Великий текст</big>
+            <center>Центрований текст</center>
+            <small>Дрібний текст</small>
+            <p><dfn><abbr title="Hypertext markup language">HTML</abbr></dfn> - це стандартна мова розмітки для
+                створення
+                веб-сторінок.</p>
+            <blockquote cite="https://example.com">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                officiis
+                quia
+                quam molestiae rem mollitia
+                aspernatur id, perspiciatis nobis reprehenderit nisi, iure repellendus fugiat blanditiis, tempore
+                cumque
+                eveniet
+                ipsam voluptatem!</blockquote>
+            <a href="https://example.com"><cite>example.com</cite></a>
+            <q>Коротка цитата</q>
+            <pre>текс т                       Текст            adipisicin</pre>
+            <code>console.log("Hello, World!");</code>
+            <samp>Hello, World!</samp>
+            <span>Щоб продовжити натисніть <kbd>Enter</kbd></span>
+            <p><var>x</var><sup>2</sup>+<var>y</var> = <output>20</output></p>
+            <span>H<sub>2</sub>O</span>
+            <math>
+                <mtable>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <msqrt>
+                                    <mrow>
+                                        <mo>|</mo>
+                                        <msup>
+                                            <mi>k</mi>
+                                            <mn>3</mn>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <mo>sin</mo>
+                                        <mi>k</mi>
+                                        <mo>|</mo>
+                                    </mrow>
+                                </msqrt>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mrow>
+                                <msqrt>
+                                    <mrow>
+                                        <mo>|</mo>
+                                        <msup>
+                                            <mi>k</mi>
+                                            <mn>3</mn>
+                                        </msup>
+                                        <mo>+</mo>
+                                        <mo>sin</mo>
+                                        <mi>k</mi>
+                                        <mo>|</mo>
+                                    </mrow>
+                                </msqrt>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                </mtable>
+            </math>
+        </section>
+        <hr>
+        <section>
+            <h2>Списки і таблиці</h2>
+            <ul>
+                <li>Перший елемент списку</li>
+                <li>Другий елемент списку</li>
+                <li>Третій елемент списку</li>
+            </ul>
+            <ol type="I" start="3">
+                <li>Перший елемент списку</li>
+                <li>Другий елемент списку</li>
+                <li>Третій елемент списку</li>
+            </ol>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Мова розмітки гіпертексту</dd>
+                <dt>CSS</dt>
+                <dd>Каскадні таблиці стилів</dd>
+                <dt>JS</dt>
+                <dd>Мова програмування JavaScript</dd>
+            </dl>
+            <table>
+                <caption>Таблиця 1.1 - Комірки</caption>
+                <colgroup>
+                <col span="2" style="background-color:lightblue">
+                <col span="1" style="background-color:rgb(41, 174, 218)">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Комірка 1</th>
+                        <th>Комірка 2</th>
+                        <th>Комірка 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Комірка 4, 7</td>
+                        <td>Комірка 5</td>
+                        <td>Комірка 6</td>
+                    </tr>
+                    <tr>
+                        <td>Комірка 8</td>
+                        <td>Комірка 9</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Комірка 10-11</td>
+                        <td>Комірка 12</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <aside>
+        <h2>Бічна панель</h2>
+        <p>Це бічна панель з додатковою інформацією.</p>
+        <figure id="image">
+            <img src="https://htmlreference.io/images/sunset.jpg" width="200" alt="Зображення">
+            <figcaption>Рисунок 1.1 - Захід сонця</figcaption>
+        </figure>
+        <audio src="https://htmlreference.io/assets/Hal.mp3" volume="0.1" loop controls></audio>
+    </aside>
+    <footer>
+        <small>&copy; 2026 Вивчення WEB</small>
+    </footer>
 </body>
+
 </html>
